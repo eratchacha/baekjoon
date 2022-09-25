@@ -33,7 +33,7 @@ int checkPalinNum(int n)
 
 int main(void)
 {
-    int nums[100000];
+    int nums[10000];
     int num;
     int i = 0;
     
