@@ -33,7 +33,6 @@ int checkPalinNum(int n)
 
 int main(void)
 {
-    int nums[10000];
     int num;
     int i = 0;
     
@@ -42,20 +41,10 @@ int main(void)
         scanf("%d",&num);
         if(num == 0)
             break;
-        nums[i++] = num;
-    }
-    
-    nums[i] = 0;
-    i = 0;
-    
-    while (nums[i] != 0)
-    {
-        if(checkPalinNum(nums[i]) == 1)
-            printf("yes");
+        if(checkPalinNum(num) == 1)
+            printf("yes\n");
         else
-            printf("no");
-        if (nums[i + 1] != 0)
-            printf("\n");
+            printf("no\n");
         i++;
     }
 }
