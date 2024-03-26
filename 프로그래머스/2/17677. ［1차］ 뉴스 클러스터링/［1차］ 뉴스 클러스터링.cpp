@@ -29,18 +29,6 @@ int checkUnion(vector<string> big, vector<string> small) {
         ind1++;
     }
     
-    // for (int i = 0 ; i < small.size() ; i++) {
-    //     for (int j = 0 ; j < big.size() ; j++) {
-    //         if (small[i] < big[j])
-    //             break;
-    //         else if (small[i] == big[j]) {
-    //             unions--;
-    //             break;
-    //         }
-    //     }
-    //     unions++;
-    // }
-    
     return unions;
 }
 
